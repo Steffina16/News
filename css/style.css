@@ -1,231 +1,26 @@
+/* =========================
+   RESET
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* =========================
+   BODY
+========================= */
+
 body{
     background:#ece7df;
-    font-family:'Libre Baskerville',serif;
+    font-family:'Libre Baskerville', serif;
     color:#222;
 }
 
-header{
-    text-align:center;
-    padding:40px 20px;
-}
-
-.date{
-    font-size:14px;
-    letter-spacing:2px;
-}
-
-h1{
-    font-family:'Playfair Display',serif;
-    font-size:60px;
-    margin:10px 0;
-}
-
-.tagline{
-    font-style:italic;
-    color:#777;
-}
-
-.breaking{
-
-    background:#c30000;
-    color:white;
-    text-align:center;
-    padding:14px;
-    font-weight:bold;
-    letter-spacing:3px;
-
-}
-
-.headline{
-
-    width:min(1100px, 92%);
-    margin:60px auto;
-    display:flex;
-    gap:40px;
-
-}
-
-.headline img{
-
-    width:50%;
-    border:5px solid white;
-
-}
-
-.headline-text{
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-}
-
-.category{
-
-    color:#b00000;
-    font-weight:bold;
-    margin-bottom:20px;
-
-}
-
-.headline-text h2{
-
-    font-size:48px;
-    font-family:'Playfair Display',serif;
-    margin-bottom:20px;
-
-}
-
-.headline-text p{
-
-    line-height:1.8;
-
-}
-
-a{
-
-    margin-top:30px;
-    display:inline-block;
-
-    background:black;
-    color:white;
-
-    text-decoration:none;
-
-    padding:15px 30px;
-
-}
-
-footer{
-
-    text-align:center;
-    padding:40px;
-
-}
-
-.article-page article{
-
-    width:800px;
-    margin:50px auto;
-
-}
-
-.article-page h2{
-
-    font-size:50px;
-    margin-bottom:20px;
-    font-family:'Playfair Display',serif;
-
-}
-
-.meta{
-
-    color:gray;
-    margin-bottom:25px;
-
-}
-
-.article-page img{
-
-    width:100%;
-    margin:30px 0;
-
-}
-
-.article-page p{
-
-    font-size:20px;
-    line-height:2;
-    margin-bottom:30px;
-
-}
-
-hr{
-
-    margin:50px 0;
-
-}
-
-.ending{
-
-    text-align:center;
-    font-style:italic;
-
-}
-
-
-
-footer{
-    margin-top:100px;
-    background:#1a1a1a;
-    color:#fff;
-    padding:50px 20px 25px;
-}
-
-.footer-content{
-    max-width:900px;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-}
-
-.footer-left h2{
-    font-family:'Playfair Display', serif;
-    font-size:38px;
-    margin-bottom:12px;
-    letter-spacing:2px;
-}
-
-.footer-left p{
-    max-width:550px;
-    color:#cfcfcf;
-    line-height:1.8;
-    margin-bottom:30px;
-}
-
-.footer-bottom{
-    max-width:900px;
-    margin:0 auto;
-    text-align:center;
-    color:#bdbdbd;
-    font-size:14px;
-    line-height:1.8;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    margin-top:30px;
-    flex-wrap:wrap;
-}
-
-nav a{
-    text-decoration:none;
-    color:#2d2d2d;
-    background:#ffffff;
-    padding:12px 28px;
-    border-radius:40px;
-    font-weight:600;
-    transition:.35s;
-    border:1px solid #ddd;
-    box-shadow:0 6px 15px rgba(0,0,0,.08);
-}
-
-nav a:hover{
-    background:#c0392b;
-    color:white;
-    transform:translateY(-3px);
-    box-shadow:0 12px 25px rgba(192,57,43,.35);
-}
+/* =========================
+   HEADER
+========================= */
 
 header{
     background:#fcfaf6;
@@ -235,11 +30,25 @@ header{
     border-bottom:1px solid #e8e1d9;
 }
 
+.site-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
 .logo img{
     width:120px;
     height:120px;
     object-fit:contain;
-    margin-bottom:4px;
+    display:block;
+    margin:0 auto 4px;
     transition:.3s;
 }
 
@@ -247,14 +56,33 @@ header{
     transform:scale(1.05);
 }
 
-.site-title{
-    font-family:'Cormorant Garamond', serif;
-    font-size:34px;
-    font-weight:700;
-    letter-spacing:6px;
-    text-transform:uppercase;
-    margin:0 0 18px;
+.article-logo{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:0;
+    margin:0;
 }
+
+.article-logo img{
+    width:129px !important;
+    height:auto;
+    display:block;
+    margin:0 auto 2px;
+    object-fit:contain;
+
+    background:transparent !important;
+    border:none !important;
+    box-shadow:none !important;
+}
+
+.article-logo:hover img{
+    transform:scale(1.05);
+}
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
     display:flex;
@@ -266,7 +94,7 @@ nav{
 nav a{
     text-decoration:none;
     color:#2b2b2b;
-    background:#ffffff;
+    background:#fff;
     padding:11px 24px;
     border-radius:50px;
     border:1px solid #d8d8d8;
@@ -284,6 +112,11 @@ nav a:hover{
     transform:translateY(-2px);
     box-shadow:0 8px 18px rgba(178,34,34,.25);
 }
+
+/* =========================
+   FEATURED
+========================= */
+
 .featured{
     width:min(1100px,92%);
     margin:45px auto;
@@ -325,16 +158,214 @@ nav a:hover{
     display:block;
     overflow:hidden;
     border-radius:12px;
-    box-shadow:0 8px 20px rgba(255, 4, 175, 0.1);
+    box-shadow:0 8px 20px rgba(255,4,175,.1);
 }
 
 .featured img{
     width:100%;
     display:block;
-    transition:.4s ease;
+    transition:.4s;
 }
 
 .featured img:hover{
     transform:scale(1.03);
     filter:brightness(.92);
+}
+
+/* =========================
+   BREAKING NEWS
+========================= */
+
+.breaking{
+    background:#c30000;
+    color:#fff;
+    text-align:center;
+    padding:14px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.headline{
+    width:min(1100px,92%);
+    margin:60px auto;
+    display:flex;
+    gap:40px;
+}
+
+.headline img{
+    width:50%;
+    border:5px solid #fff;
+}
+
+.headline-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.category{
+    color:#b00000;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.headline-text h2{
+    font-family:'Playfair Display', serif;
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.headline-text p{
+    line-height:1.8;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.read-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#111;
+    color:#fff;
+    padding:15px 30px;
+    border-radius:6px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.read-btn:hover{
+    background:#b22222;
+}
+
+.back-btn{
+    display:inline-block;
+    margin:0;
+    padding:8px 20px;
+    border-radius:30px;
+    background:#fff;
+    color:#222;
+    border:1px solid #ddd;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#b22222;
+    color:#fff;
+    border-color:#b22222;
+}
+
+/* =========================
+   ARTICLE
+========================= */
+
+.article-header{
+    background:#fcfaf6;
+    text-align:center;
+    padding:15px 20px;
+    border-bottom:1px solid #ddd;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.article-header .site-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:28px;
+    letter-spacing:4px;
+    margin:0 0 10px;
+}
+
+.article-page article{
+    width:min(800px,92%);
+    margin:50px auto;
+}
+
+.article-page h2{
+    font-family:'Playfair Display', serif;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.meta{
+    color:gray;
+    margin-bottom:25px;
+}
+
+.author-link{
+    color:#b22222;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.author-link:hover{
+    text-decoration:underline;
+}
+
+.article-page img{
+    width:75%;
+    max-width:650px;
+    display:block;
+    margin:35px auto;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.article-page p{
+    font-size:20px;
+    line-height:2;
+    margin-bottom:30px;
+}
+
+hr{
+    margin:50px 0;
+}
+
+.ending{
+    text-align:center;
+    font-style:italic;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:100px;
+    background:#1a1a1a;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px 25px;
+}
+
+.footer-content{
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.footer-left h2{
+    font-family:'Playfair Display', serif;
+    font-size:38px;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.footer-left p{
+    max-width:550px;
+    color:#cfcfcf;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.footer-bottom{
+    max-width:900px;
+    margin:0 auto;
+    color:#bdbdbd;
+    font-size:14px;
+    line-height:1.8;
 }
