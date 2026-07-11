@@ -6,8 +6,8 @@ const snapshots = [
 
 {
     image: "images/snapshots/1.jpg",
-    date: "July 14, 2025",
-    text: "Our first café date together. I still remember how nervous I was. test"
+    date: "August 07, 2025",
+    text: "Your Birthday, we went to the Samgyeopsal, had some drinks and, played the arcade games"
 },
 
 {
