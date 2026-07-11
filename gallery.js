@@ -12,8 +12,8 @@ const snapshots = [
 
 {
     image: "images/snapshots/2.jpg",
-    date: "August 3, 2025",
-    text: "One of the happiest afternoons we ever had. test"
+    date: "July 9, 2026",
+    text: "Our jogging date, then we went to eat pancit canton and pizza"
 },
 
 {

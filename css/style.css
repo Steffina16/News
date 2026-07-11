@@ -652,3 +652,117 @@ footer{
 }
 
 }
+
+/*====================================
+        MINI ARTICLE
+====================================*/
+
+.mini-news{
+
+    width:min(1100px,92%);
+
+    margin:45px auto;
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:center;
+
+    background:#f8f5ef;
+
+    border:1px solid #d9d0c3;
+
+    border-radius:15px;
+
+    padding:22px;
+
+    transition:.3s;
+
+}
+
+.mini-news:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.mini-news img{
+
+    width:260px;
+
+    height:170px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    flex-shrink:0;
+
+}
+
+.mini-news-content{
+
+    flex:1;
+
+}
+
+.mini-news .category{
+
+    color:#9a3d3d;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+}
+
+.mini-news h3{
+
+    font-family:'Playfair Display', serif;
+
+    font-size:30px;
+
+    margin:12px 0;
+
+    color:#222;
+
+}
+
+.mini-news p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
+.mini-btn{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:#4f4338;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+}
+
+.mini-btn:hover{
+
+    background:#6a5848;
+
+}
