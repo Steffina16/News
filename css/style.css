@@ -764,5 +764,171 @@ footer{
 .mini-btn:hover{
 
     background:#6a5848;
+}
 
+/* =========================================
+   BIRTHDAY ARTICLE
+========================================= */
+.birthday-news {
+    position: relative;
+
+    width: calc(100% - 230px);
+    max-width: 1535px;
+
+    margin: 30px auto;
+
+    background: #f9f6f0;
+
+    border: 2px solid #cfc5b8;
+    border-left: 6px solid #c9162b;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.10);
+}
+/* Subtle web detail */
+
+.birthday-news::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -70px;
+    top: -70px;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            transparent 0 20px,
+            rgba(201, 22, 43, 0.08) 21px 22px
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.birthday-news-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 28px 32px;
+}
+
+
+/* Small category */
+
+.birthday-label {
+
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #b51a2d;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* Headline */
+
+.birthday-news h3 {
+
+    margin: 5px 0 6px;
+
+    color: #1c1a18;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(25px, 4vw, 38px);
+
+    line-height: 1.15;
+
+    font-weight: 900;
+}
+
+
+/* Date */
+
+.birthday-date {
+
+    margin: 0 0 18px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* Description */
+
+.birthday-news-content > p:not(.birthday-date) {
+
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    color: #555;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* Button */
+
+.birthday-btn {
+
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    color: #ffffff;
+
+    background: #c9162b;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+
+.birthday-btn:hover {
+
+    background: #a90f21;
+
+    transform: translateY(-1px);
 }

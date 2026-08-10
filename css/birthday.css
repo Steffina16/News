@@ -1,0 +1,763 @@
+/* =========================================
+   THE DAILY HEART
+   SPIDER-MAN BIRTHDAY ARTICLE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Libre Baskerville', serif;
+
+    color: #241717;
+
+    background:
+        linear-gradient(
+            rgba(65, 0, 8, 0.55),
+            rgba(10, 0, 2, 0.75)
+        ),
+        url("../images/spiderman-suit-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   SPIDER-MAN TOP BAR
+========================================= */
+
+header {
+    height: 72px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #120305,
+            #470811,
+            #120305
+        );
+
+    border-bottom: 3px solid #d7192c;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.45);
+
+    z-index: 20;
+}
+
+
+/* =========================================
+   LEFT SPIDER-MAN LOGO
+========================================= */
+
+.logo {
+    position: absolute;
+
+    left: 30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+.logo img {
+    width: 100px;
+    height: 86px;
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 3px 5px rgba(0,0,0,0.5)
+        );
+}
+
+
+/* =========================================
+   CENTER — THE DAILY HEART
+========================================= */
+
+.site-title {
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* Main title */
+
+.site-title h1 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 27px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    line-height: 1;
+
+    text-align: center;
+
+    /* Spider-Man red outline/shadow */
+
+    text-shadow:
+        2px 2px 0 #c91428,
+        -1px -1px 0 #c91428,
+        0 0 8px rgba(255,255,255,0.15);
+}
+
+
+/* Webbing beside title */
+
+.web-decoration {
+
+    color: #d7192c;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   RIGHT — BACK BUTTON
+========================================= */
+
+.back-btn {
+
+    position: absolute;
+
+    right: 30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Libre Baskerville', serif;
+
+    font-size: 14px;
+
+    line-height: 1;
+
+    padding: 9px 14px;
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    border-radius: 5px;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.back-btn:hover {
+
+    background: #c9162c;
+
+    border-color: #c9162c;
+}
+/* =========================================
+   SPIDER-MAN HANGING DECORATION
+========================================= */
+
+.spiderman-hanging {
+
+    position: absolute;
+
+    top: 65px;
+
+    right: 25px;
+
+    width: 180px;
+
+    z-index: 15;
+
+    pointer-events: none;
+}
+
+.spiderman-hanging img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 8px 12px rgba(0,0,0,0.6)
+        );
+}
+
+
+/* =========================================
+   SPIDER-MAN MAIN ARTICLE
+========================================= */
+
+main {
+    position: relative;
+
+    width: min(900px, 92%);
+
+    margin: 55px auto 70px;
+
+    padding: 50px 55px;
+
+    background:
+        linear-gradient(
+            rgba(255, 252, 247, 0.97),
+            rgba(255, 248, 241, 0.97)
+        );
+
+    border-top: 7px solid #c9162b;
+
+    border-bottom: 7px solid #111;
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.45);
+
+    overflow: hidden;
+}
+
+/* =========================================
+   COMIC BOOK WEB EFFECT
+========================================= */
+
+main::before {
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    right: -80px;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            transparent 0 25px,
+            rgba(190, 15, 35, 0.18) 26px 28px
+        );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+main::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -100px;
+    left: -100px;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            transparent 0 25px,
+            rgba(190, 15, 35, 0.14) 26px 28px
+        );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+main > * {
+    position: relative;
+
+    z-index: 2;
+}
+
+/* =========================================
+   BREAKING NEWS
+========================================= */
+
+.category {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 10px 18px;
+
+    margin-bottom: 20px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b5091b,
+            #e21b32
+        );
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+    border-left: 6px solid #111;
+
+    box-shadow:
+        4px 4px 0 #111;
+
+    transform: skew(-3deg);
+}
+
+/* =========================================
+   COMIC BOOK HEADLINE
+========================================= */
+
+main h2 {
+
+    margin: 10px 0 15px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(34px, 5vw, 52px);
+
+    font-weight: 900;
+
+    line-height: 1.05;
+
+    color: #b5091b;
+
+    text-shadow:
+        2px 2px 0 #111;
+
+    letter-spacing: -0.5px;
+}
+/* Date */
+
+.meta {
+
+    display: inline-block;
+
+    margin: 0 0 30px;
+
+    padding-bottom: 8px;
+
+    color: #555;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border-bottom: 2px solid #c9162b;
+}
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+
+    width: 100%;
+
+    display: block;
+
+    max-height: 650px;
+
+    object-fit: cover;
+
+    margin-bottom: 35px;
+
+    border: 5px solid #111;
+
+    box-shadow:
+        8px 8px 0 #c9162b;
+
+    position: relative;
+}
+
+/* =========================================
+   ARTICLE TEXT
+========================================= */
+
+article p {
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin: 0 0 25px;
+
+    color: #241717;
+}
+
+article > p:first-child::first-letter {
+
+    float: left;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 58px;
+
+    font-weight: 900;
+
+    line-height: 0.8;
+
+    padding-right: 8px;
+
+    color: #c9162b;
+}
+/* =========================================
+   SPIDER-MAN SPECIAL REPORT
+========================================= */
+
+.spiderman-report {
+
+    position: relative;
+
+    margin: 45px 0;
+
+    padding: 25px 30px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #b30d1d,
+            #df2439
+        );
+
+    border-left: 7px solid #111;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.25);
+}
+
+
+.spiderman-report::after {
+
+    content: "🕸️";
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 5px;
+
+    font-size: 65px;
+
+    opacity: 0.18;
+}
+
+
+.spiderman-report h3 {
+
+    margin: 0 0 15px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 23px;
+}
+
+
+.spiderman-report p {
+
+    margin: 0;
+
+    color: white;
+}
+
+
+/* =========================================
+   PHOTO GALLERY
+========================================= */
+
+.story-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin: 40px 0;
+}
+
+
+.story-gallery img {
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Second gallery */
+
+.story-gallery-two {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+
+    margin: 45px 0;
+}
+
+
+.story-gallery-two img {
+
+    width: 100%;
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+blockquote {
+
+    margin: 45px 0;
+
+    padding: 25px 30px;
+
+    border-left: 5px solid #c9162b;
+
+    background: #f5e8df;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 22px;
+
+    line-height: 1.6;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 22px 15px;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    background: #100305;
+
+    border-top: 3px solid #c9162b;
+}
+
+footer p {
+    margin: 5px 0;
+
+    font-size: 12px;
+}
+
+footer a {
+    color: #ff4d6d;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+
+    text-decoration: underline;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: 62px;
+
+        padding: 0 15px;
+    }
+
+
+    .logo {
+        left: 15px;
+    }
+
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .site-title h1 {
+        font-size: 19px;
+    }
+
+
+    .back-btn {
+        right: 15px;
+
+        font-size: 11px;
+
+        padding: 7px 9px;
+    }
+
+
+    .spiderman-hanging {
+
+        width: 100px;
+
+        right: -5px;
+
+        top: 55px;
+    }
+
+    main {
+
+        width: 94%;
+
+        margin: 35px auto 45px;
+
+        padding: 30px 22px;
+    }
+
+    main h2 {
+
+        font-size: 34px;
+    }
+
+    article p {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .story-gallery {
+
+        gap: 10px;
+    }
+
+    .story-gallery-two {
+
+        gap: 10px;
+    }
+
+    blockquote {
+
+        font-size: 18px;
+
+        padding: 20px;
+    }
+
+    footer {
+
+        padding: 15px;
+    }
+}
