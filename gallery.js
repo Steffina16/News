@@ -18,20 +18,21 @@ const snapshots = [
 
 {
     image: "images/snapshots/3.jpg",
-    date: "September 8, 2025",
-    text: "The day we couldn't stop laughing test."
+    date: "August 7, 2026",
+    text: "We watched Spider-Man:Homecoming"
 },
 
 {
     image: "images/snapshots/4.jpg",
-    date: "October 20, 2025",
-    text: "Another beautiful memory together test."
+    date: "August 7, 2026",
+    text: "We Ate at Sangang"
 },
 
 {
     image: "images/snapshots/5.jpg",
     date: "November 16, 2025",
-    text: "My Birthday this is a test"
+    text: "Stephen's Birthday (soon)"
+    
 }
 
 ];
